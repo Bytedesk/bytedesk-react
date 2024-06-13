@@ -21,6 +21,14 @@
   "authors": [
     "270580156@qq.com"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bytedesk/bytedesk-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bytedesk/bytedesk-react/issues"
+  },
+  "homepage": "https://github.com/bytedesk/bytedesk-react",
   "license": "MIT",
   "files": [
     "dist"
