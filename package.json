@@ -33,6 +33,16 @@
   "files": [
     "dist"
   ],
+  "keywords": [
+    "ai",
+    "chat",
+    "bot",
+    "chatbot",
+    "assistant",
+    "openai",
+    "chatgpt",
+    "react"
+  ],
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
