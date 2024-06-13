@@ -2,7 +2,7 @@
  * @Author: jackning 270580156@qq.com
  * @Date: 2023-09-25 13:30:26
  * @LastEditors: jackning 270580156@qq.com
- * @LastEditTime: 2024-06-13 18:32:43
+ * @LastEditTime: 2024-06-13 19:31:39
  * @Description: bytedesk.com https://github.com/Bytedesk/bytedesk
  *   Please be aware of the BSL license restrictions before installing Bytedesk IM – 
  *  selling, reselling, or hosting Bytedesk IM as a service is a breach of the terms and automatically terminates your rights under the license. 
@@ -36,9 +36,7 @@ import { ChatFloat } from "bytedesk-react";
     chatUrl="http://localhost:9006/chat?t=1&sid=default_wg_uid&"
 />
 // params:
-path: server address
-t: 0: agent chat，1: workgroup chat，2: robot chat
-sid: uuid
+chatUrl: chat url;
 ```
 
 ## LICENSE
