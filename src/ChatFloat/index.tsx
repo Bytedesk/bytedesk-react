@@ -17,12 +17,10 @@ import React from 'react';
 import { useState } from 'react';
 
 export type ChatFloatProps = {
-    path?: string;
-    t?: string;
-    sid?: string;
+    chatUrl?: string;
 };
 
-const ChatFloat = ({ path = '/chat', t = '1', sid = 'default_wg_uid' }: ChatFloatProps) => {
+const ChatFloat = ({ chatUrl = '/chat?t=1&sid=default_wg_uid&' }: ChatFloatProps) => {
     const [showFloatWindow, setShowFloatWindow] = useState(false);
 
     const handleOpenFloatWindow = () => {
@@ -70,7 +68,7 @@ const ChatFloat = ({ path = '/chat', t = '1', sid = 'default_wg_uid' }: ChatFloa
                 >
                     {/* 嵌入的iframe */}
                     <iframe
-                        src={`${path}?t=${t}&sid=${sid}&`} // 替换为您想要嵌入的网页地址
+                        src={`${chatUrl}`} // 替换为您想要嵌入的网页地址
                         style={{
                             width: '100%',
                             height: '600px', // 高度600，留出空间给关闭按钮

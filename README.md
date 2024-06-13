@@ -33,9 +33,7 @@ yarn add bytedesk-react
 import { ChatFloat } from "bytedesk-react";
 // 
 <ChatFloat
-    path={"http://localhost:9006/chat"}
-    t="1"
-    sid="default_wg_uid"
+    chatUrl="http://localhost:9006/chat?t=1&sid=default_wg_uid&"
 />
 // params:
 path: server address
