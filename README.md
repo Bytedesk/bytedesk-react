@@ -47,7 +47,7 @@ chatUrl: chat url;
 
 ## Example
 
-| button-color |  button-left | button-margin | iframe-margin |
+| custom button color |  custom button left | custom button margin | custom iframe margin |
 | :----------: | :----------: | :----------:  | :----------: |
 | <img src="./docs/image/button-color.png" width="250"> | <img src="./docs/image/button-left.png" width="250"> | <img src="./docs/image/button-margin.png" width="250"> | <img src="./docs/image/iframe-margin.png" width="250"> |
 
