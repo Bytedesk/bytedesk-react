@@ -2,7 +2,7 @@
  * @Author: jackning 270580156@qq.com
  * @Date: 2023-09-25 13:30:26
  * @LastEditors: jackning 270580156@qq.com
- * @LastEditTime: 2024-06-14 09:41:04
+ * @LastEditTime: 2024-06-14 09:43:14
  * @Description: bytedesk.com https://github.com/Bytedesk/bytedesk
  *   Please be aware of the BSL license restrictions before installing Bytedesk IM – 
  *  selling, reselling, or hosting Bytedesk IM as a service is a breach of the terms and automatically terminates your rights under the license. 
@@ -17,7 +17,7 @@
 [![NPM version](https://img.shields.io/npm/v/bytedesk-react.svg?style=flat)](https://npmjs.org/package/bytedesk-react)
 [![NPM downloads](http://img.shields.io/npm/dm/bytedesk-react.svg?style=flat)](https://npmjs.org/package/bytedesk-react)
 
-bytedesk.com react lib
+bytedesk.com react lib web 客服聊天插件
 
 ## 安装
 
