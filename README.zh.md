@@ -51,6 +51,20 @@ chatUrl: 客服链接;
 | :----------: | :----------: | :----------:  | :----------: |
 | <img src="./docs/image/button-color.png" width="250"> | <img src="./docs/image/button-left.png" width="250"> | <img src="./docs/image/button-margin.png" width="250"> | <img src="./docs/image/iframe-margin.png" width="250"> |
 
+## 更多
+
+- [iOS-oc](https://github.com/Bytedesk/bytedesk-oc)
+- [iOS-swift](https://github.com/Bytedesk/bytedesk-swift)
+- [Android](https://github.com/bytedesk/bytedesk-android)
+- [Flutter](https://github.com/bytedesk/bytedesk-flutter)
+- [Vue](https://github.com/bytedesk/bytedesk-vue)
+- [React](https://github.com/bytedesk/bytedesk-react)
+- [React-native](https://github.com/bytedesk/bytedesk-react-native)
+- [UniApp](https://github.com/bytedesk/bytedesk-uniapp)
+- [Web](https://github.com/bytedesk/bytedesk-web)
+- [Browser-Extension](https://github.com/Bytedesk/bytedesk-browser-extention)
+- [Vscode-plugin](https://github.com/bytedesk/bytedesk-vscode-plugin)
+
 ## LICENSE
 
 MIT
