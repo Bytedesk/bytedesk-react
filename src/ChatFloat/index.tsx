@@ -3,7 +3,7 @@
  * @Author: jackning 270580156@qq.com
  * @Date: 2024-06-13 15:37:40
  * @LastEditors: jackning 270580156@qq.com
- * @LastEditTime: 2024-06-14 09:20:58
+ * @LastEditTime: 2024-06-15 11:12:51
  * @Description: bytedesk.com https://github.com/Bytedesk/bytedesk
  *   Please be aware of the BSL license restrictions before installing Bytedesk IM –
  *  selling, reselling, or hosting Bytedesk IM as a service is a breach of the terms and automatically terminates your rights under the license.
@@ -14,12 +14,14 @@
  * Copyright (c) 2024 by bytedesk.com, All Rights Reserved.
  */
 import React from 'react';
-import { CSSProperties, useState } from 'react';
+import { CSSProperties, useEffect, useState } from 'react';
 
 export type ChatFloatProps = {
     chatUrl?: string;
     buttonPosition?: 'left' | 'right'; // 新增：按钮位置
     buttonBackgroundColor?: string; // 新增：按钮背景色
+    iframeWidth?: number; // 新增：iframe宽度
+    iframeHeight?: number; // 新增：iframe高度
     iframeMargins?: { // 新增：iframe边距
         right?: number;
         bottom?: number;
@@ -38,19 +40,45 @@ const ChatFloat = ({
     chatUrl = '/chat?t=1&sid=default_wg_uid&',
     buttonPosition = 'right', // 默认按钮在右边
     buttonBackgroundColor = 'blue', // 默认按钮背景色为蓝色
+    iframeWidth = 400, // iframe默认宽度
+    iframeHeight = 600, // iframe默认高度
     iframeMargins = { right: 20, bottom: 20, left: 20 }, // iframe默认边距
     buttonMargins = { right: 20, bottom: 20, left: 20 }, // 按钮默认边距
     showButton = true, // 默认显示按钮
     showIframe = true, // 默认显示iframe
 }: ChatFloatProps) => {
     const [showFloatWindow, setShowFloatWindow] = useState(false);
+    // const [containerHeight, setContainerHeight] = useState('0px'); // 新增状态用于控制容器高度
+    const isMobileBrowser = () => {
+        const userAgent = navigator.userAgent || navigator.vendor;
+        console.log('userAgent:', userAgent);
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
+    };
+    // 根据屏幕宽度判断是否是手机的函数
+    const isMobileScreen = () => {
+        const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        console.log('isMobileScreen:', width);
+        // 通常手机屏幕宽度小于768px，可根据实际情况调整该值
+        return width < 768;
+    }
+    // const isMobile = () => {
+    //     return isMobileBrowser() || isMobileScreen();
+    // }
+    const isMobile = isMobileBrowser() || isMobileScreen();
+
+    useEffect(() => {
+        console.log('ChatFloat isMobileBrowser:', isMobileBrowser(), ' isMobileScreen:', isMobileScreen());
+    }, [])
 
     const handleOpenFloatWindow = () => {
         setShowFloatWindow(true);
     };
 
     const handleCloseFloatWindow = () => {
-        setShowFloatWindow(false);
+        // 添加延迟以确保动画完成
+        setTimeout(() => {
+            setShowFloatWindow(false);
+        }, 200);
     };
 
     // 根据位置调整按钮的样式
@@ -72,15 +100,52 @@ const ChatFloat = ({
     // 根据位置调整iframe容器的样式
     const getIframeContainerStyles = (): CSSProperties => ({
         position: 'fixed',
-        [buttonPosition === 'right' ? 'right' : 'left']: buttonPosition === 'right' ? iframeMargins.right + 'px' : iframeMargins.left + 'px', // 动态设置左右边距
-        bottom: iframeMargins.bottom + 'px',
-        width: '400px',
-        height: '600px',
+        [buttonPosition === 'right' ? 'right' : 'left']: isMobile ? '2px' : (buttonPosition === 'right' ? iframeMargins.right + 'px' : iframeMargins.left + 'px'), // 动态设置左右边距
+        bottom: isMobile ? '0' : iframeMargins.bottom + 'px',
+        width: isMobile ? '100%' : iframeWidth + 'px',
+        height: isMobile ? '80vh' : iframeHeight + 'px',
         // backgroundColor: 'white',
         zIndex: 1000,
         borderRadius: '7px',
-        boxShadow: '5px 5px 10px 0px rgba(0,0,0,0.5)', // 添加阴影效果
+        boxShadow: isMobile ? 'none' : '5px 5px 10px 0px rgba(0,0,0,0.5)', // 添加阴影效果
+        // FIXME: 关闭动画不起作用
+        animation: showFloatWindow ? 'slideInFromBottom 0.2s ease-out forwards' : 'slideOutToBottom 0.5s ease-out forwards', // 添加动画
     });
+
+    // CSS动画定义
+    const animationStyles = `
+        @keyframes slideInFromBottom {
+            0% {
+                transform: translateY(100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        @keyframes slideOutToBottom {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(100%);
+            }
+        }
+    `;
+
+    useEffect(() => {
+        // ...之前的useEffect内容...
+
+        // 将动画样式注入到head中（如果尚未注入）
+        const styleElement = document.getElementById('slideInAnimation');
+        if (!styleElement) {
+            const newStyleElement = document.createElement('style');
+            newStyleElement.id = 'slideInAnimation';
+            newStyleElement.type = 'text/css';
+            newStyleElement.innerHTML = animationStyles;
+            document.head.appendChild(newStyleElement);
+        }
+    }, [animationStyles]); // 确保这个useEffect只在组件挂载时运行一次
+
 
     return (
         <div>
