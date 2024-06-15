@@ -2,7 +2,7 @@
  * @Author: jackning 270580156@qq.com
  * @Date: 2024-06-13 18:20:50
  * @LastEditors: jackning 270580156@qq.com
- * @LastEditTime: 2024-06-13 19:30:19
+ * @LastEditTime: 2024-06-15 11:13:52
  * @Description: bytedesk.com https://github.com/Bytedesk/bytedesk
  *   Please be aware of the BSL license restrictions before installing Bytedesk IM – 
  *  selling, reselling, or hosting Bytedesk IM as a service is a breach of the terms and automatically terminates your rights under the license. 
@@ -45,6 +45,7 @@ npm config get registry
 npm config set registry https://registry.npmjs.org/
 #
 npm login
+# 先提交github，再发布npm
 npm version patch
 yarn run build
 # 
