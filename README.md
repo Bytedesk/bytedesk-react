@@ -2,7 +2,7 @@
  * @Author: jackning 270580156@qq.com
  * @Date: 2023-09-25 13:30:26
  * @LastEditors: jackning 270580156@qq.com
- * @LastEditTime: 2024-06-15 11:16:37
+ * @LastEditTime: 2024-06-15 11:19:15
  * @Description: bytedesk.com https://github.com/Bytedesk/bytedesk
  *   Please be aware of the BSL license restrictions before installing Bytedesk IM – 
  *  selling, reselling, or hosting Bytedesk IM as a service is a breach of the terms and automatically terminates your rights under the license. 
@@ -49,9 +49,10 @@ chatUrl: chat url;
 
 ## Example
 
-| custom button color |  custom button left | custom button margin | custom iframe margin |
-| :----------: | :----------: | :----------:  | :----------: |
-| <img src="./docs/image/button-color.png" width="250"> | <img src="./docs/image/button-left.png" width="250"> | <img src="./docs/image/button-margin.png" width="250"> | <img src="./docs/image/iframe-margin.png" width="250"> |
+| custom button color |  custom button left | custom button margin | custom iframe margin | custom iframe width |
+| :----------: | :----------: | :----------:  | :----------: | :----------: |
+| <img src="./image/button-color.png" width="250"> | <img src="./image/button-left.png" width="250"> | <img src="./image/button-margin.png" width="250"> | <img src="./image/iframe-margin.png" width="250"> | <img src="./image/iframe-width.png" width="250"> |
+
 
 ## More
 
