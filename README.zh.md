@@ -2,7 +2,7 @@
  * @Author: jackning 270580156@qq.com
  * @Date: 2023-09-25 13:30:26
  * @LastEditors: jackning 270580156@qq.com
- * @LastEditTime: 2024-06-14 09:48:06
+ * @LastEditTime: 2024-06-15 11:16:30
  * @Description: bytedesk.com https://github.com/Bytedesk/bytedesk
  *   Please be aware of the BSL license restrictions before installing Bytedesk IM – 
  *  selling, reselling, or hosting Bytedesk IM as a service is a breach of the terms and automatically terminates your rights under the license. 
@@ -36,6 +36,8 @@ import { ChatFloat } from "bytedesk-react";
     chatUrl="http://localhost:9006/chat?t=1&sid=default_wg_uid&"
     //buttonPosition: 'right', // botton position：left or right
     //buttonBackgroundColor: 'blue', // button background color
+    //iframeWidth: 400,
+    //iframeHeight: 600,
     //iframeMargins: { right: 20, bottom: 20, left: 20 }, // iframe margins
     //buttonMargins: { right: 20, bottom: 20, left: 20 }, // button margins
     //showButton: true, // show button or not
