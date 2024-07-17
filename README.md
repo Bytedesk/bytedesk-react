@@ -2,7 +2,7 @@
  * @Author: jackning 270580156@qq.com
  * @Date: 2023-09-25 13:30:26
  * @LastEditors: jackning 270580156@qq.com
- * @LastEditTime: 2024-06-18 18:48:03
+ * @LastEditTime: 2024-07-17 22:03:55
  * @Description: bytedesk.com https://github.com/Bytedesk/bytedesk
  *   Please be aware of the BSL license restrictions before installing Bytedesk IM – 
  *  selling, reselling, or hosting Bytedesk IM as a service is a breach of the terms and automatically terminates your rights under the license. 
@@ -38,7 +38,7 @@ yarn add bytedesk-react
 import { ChatFloat } from "bytedesk-react";
 // 
 <ChatFloat
-    chatUrl="https://kf.weiyuai.cn/chat?t=1&sid=default_wg_uid&"
+    chatUrl="https://kf.weiyuai.cn/chat?org=df_org_uid&t=1&sid=df_wg_uid&"
     //buttonPosition: 'right', // botton position：left or right
     //buttonBackgroundColor: 'blue', // button background color
     //iframeWidth: 400,
