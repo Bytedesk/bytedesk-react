@@ -3,7 +3,7 @@
  * @Author: jackning 270580156@qq.com
  * @Date: 2024-06-13 15:37:40
  * @LastEditors: jackning 270580156@qq.com
- * @LastEditTime: 2024-06-15 11:12:51
+ * @LastEditTime: 2024-09-05 17:22:55
  * @Description: bytedesk.com https://github.com/Bytedesk/bytedesk
  *   Please be aware of the BSL license restrictions before installing Bytedesk IM –
  *  selling, reselling, or hosting Bytedesk IM as a service is a breach of the terms and automatically terminates your rights under the license.
@@ -37,7 +37,7 @@ export type ChatFloatProps = {
 };
 
 const ChatFloat = ({
-    chatUrl = '/chat?t=1&sid=default_wg_uid&',
+    chatUrl = '/chat?org=df_org_uid&t=1&sid=df_wg_uid&',
     buttonPosition = 'right', // 默认按钮在右边
     buttonBackgroundColor = 'blue', // 默认按钮背景色为蓝色
     iframeWidth = 400, // iframe默认宽度
