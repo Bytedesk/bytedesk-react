@@ -2,7 +2,7 @@
  * @Author: jackning 270580156@qq.com
  * @Date: 2024-09-05 17:21:28
  * @LastEditors: jackning 270580156@qq.com
- * @LastEditTime: 2024-09-05 17:26:55
+ * @LastEditTime: 2024-09-05 17:28:46
  * @Description: bytedesk.com https://github.com/Bytedesk/bytedesk
  *   Please be aware of the BSL license restrictions before installing Bytedesk IM – 
  *  selling, reselling, or hosting Bytedesk IM as a service is a breach of the terms and automatically terminates your rights under the license. 
@@ -26,6 +26,9 @@ Bytedesk.close()
 Bytedesk.send()
 # 切换窗口
 Bytedesk.toggle()
+# 显示预览消息
+Bytedesk.showPreviewMessage()
+Bytedesk.hidePreviewMessage()
 ```
 
 - CI/CD 自动打包发布
