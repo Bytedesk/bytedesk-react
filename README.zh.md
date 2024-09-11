@@ -2,7 +2,7 @@
  * @Author: jackning 270580156@qq.com
  * @Date: 2023-09-25 13:30:26
  * @LastEditors: jackning 270580156@qq.com
- * @LastEditTime: 2024-06-15 11:22:06
+ * @LastEditTime: 2024-09-11 09:57:20
  * @Description: bytedesk.com https://github.com/Bytedesk/bytedesk
  *   Please be aware of the BSL license restrictions before installing Bytedesk IM – 
  *  selling, reselling, or hosting Bytedesk IM as a service is a breach of the terms and automatically terminates your rights under the license. 
@@ -51,6 +51,11 @@ import { ChatFloat } from "bytedesk-react";
 // params:
 chatUrl: 客服链接;
 ```
+
+## 获取客服链接
+
+- [登录管理后台](https://www.weiyuai.cn/admin/cs/wgroup)
+- <img src="./image/get_code.png" width="500">
 
 ## 示例
 
