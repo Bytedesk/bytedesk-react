@@ -2,7 +2,7 @@
  * @Author: jackning 270580156@qq.com
  * @Date: 2023-09-25 13:30:26
  * @LastEditors: jackning 270580156@qq.com
- * @LastEditTime: 2024-09-11 09:57:20
+ * @LastEditTime: 2024-10-11 08:18:13
  * @Description: bytedesk.com https://github.com/Bytedesk/bytedesk
  *   Please be aware of the BSL license restrictions before installing Bytedesk IM – 
  *  selling, reselling, or hosting Bytedesk IM as a service is a breach of the terms and automatically terminates your rights under the license. 
@@ -17,12 +17,22 @@
 [![NPM version](https://img.shields.io/npm/v/bytedesk-react.svg?style=flat)](https://npmjs.org/package/bytedesk-react)
 [![NPM downloads](http://img.shields.io/npm/dm/bytedesk-react.svg?style=flat)](https://npmjs.org/package/bytedesk-react)
 
-bytedesk.com react lib web 客服聊天插件
+## 部分功能
 
-## 语言
+- 微语官方技术支持
+- 100%全部开源，支持自定义界面
+- 支持人工客服
+- 支持机器人
+- 支持文字、图片、语音、表情
+- 支持消息预知：对方正在输入
+- 支持消息状态：送达、已读
+- 支持消息撤回
+- 对接第三方账号系统/多用户切换
 
-- [English](./README.md)
-- [中文](./README.zh.md)
+## Demo 下载
+
+- [Gitee Demo](https://gitee.com/270580156/bytedesk-react)
+- [Github Demo](https://github.com/Bytedesk/bytedesk-react)
 
 ## 安装
 
@@ -63,22 +73,38 @@ chatUrl: 客服链接;
 | :----------: | :----------: | :----------:  | :----------: | :----------: |
 | <img src="./image/button-color.png" width="250"> | <img src="./image/button-left.png" width="250"> | <img src="./image/button-margin.png" width="250"> | <img src="./image/iframe-margin.png" width="250"> | <img src="./image/iframe-width.png" width="250"> |
 
-## 更多
+## 对话SDK
 
-- [iOS-oc](https://github.com/Bytedesk/bytedesk-oc)
+<!-- - [iOS-oc](https://github.com/Bytedesk/bytedesk-oc) -->
+<!-- - [React-native](https://github.com/bytedesk/bytedesk-react-native) -->
+<!-- - [Vue](https://github.com/bytedesk/bytedesk-vue) -->
+<!-- - [Browser-Extension](https://github.com/Bytedesk/bytedesk-browser-extention) -->
+<!-- - [Vscode-plugin](https://github.com/bytedesk/bytedesk-vscode-plugin) -->
 - [iOS-swift](https://github.com/Bytedesk/bytedesk-swift)
 - [Android](https://github.com/bytedesk/bytedesk-android)
 - [Flutter](https://github.com/bytedesk/bytedesk-flutter)
-- [Vue](https://github.com/bytedesk/bytedesk-vue)
 - [React](https://github.com/bytedesk/bytedesk-react)
-- [React-native](https://github.com/bytedesk/bytedesk-react-native)
 - [UniApp](https://github.com/bytedesk/bytedesk-uniapp)
 - [Web](https://github.com/bytedesk/bytedesk-web)
-- [Browser-Extension](https://github.com/Bytedesk/bytedesk-browser-extention)
-- [Vscode-plugin](https://github.com/bytedesk/bytedesk-vscode-plugin)
 
-## LICENSE
+## 客户端
 
-MIT
+- [Windows](https://www.weiyuai.cn/download.html)
+- [Mac](https://www.weiyuai.cn/download.html)
+- [Linux](https://www.weiyuai.cn/download.html)
+- [Android](https://www.weiyuai.cn/download.html)
+- [IOS](https://www.weiyuai.cn/download.html)
 
-- [dumi](https://d.umijs.org/guide/initialize)
+## 技术栈
+
+<!-- - [sofaboot](https://github.com/sofastack/sofa-boot/blob/master/README_ZH.md) for im server 基于金融级云原生架构-->
+- [springboot-3.x for 后端](https://github.com/Bytedesk/bytedesk)
+- [python for ai](https://github.com/Bytedesk/bytedesk-ai)
+- [react for web前端](https://github.com/Bytedesk/bytedesk-react)
+- [flutter for 移动客户端(ios&android)](https://github.com/Bytedesk/bytedesk-mobile)
+- [electron for 桌面客户端(windows&mac&linux)](https://github.com/Bytedesk/bytedesk-desktop)
+
+## 联系
+
+- [Email](mailto:270580156@qq.com)
+- [微信](./images/wechat.png)
